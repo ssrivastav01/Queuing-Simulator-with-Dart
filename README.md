@@ -43,40 +43,18 @@ A Stochastic Process generates events based on an exponential probability distri
 ## Installation
 To run the simulator, ensure that you have Dart installed on your system. Clone this repository and run the following commands:
 
-```bash
-# Clone the repository
-git clone https://github.com/your-username/queueing-system-simulator.git
-
-# Change into the project directory
-cd queueing-system-simulator
-
-# Get dependencies
-dart pub get
-
-
-
+1. Clone the repository from GitHub using the appropriate URL.
+2. Change into the project directory.
+3. Get the dependencies required for the project using Dart's package manager.
 
 ## Usage
-To simulate a queueing system, create an instance of the desired process and add it to the simulation environment. The following example demonstrates a basic setup:
+To simulate a queueing system, create an instance of the desired process and add it to the simulation environment. The following steps describe a basic setup:
 
-```dart
-import 'queueing_system_simulator.dart';
-
-void main() {
-  // Initialize the simulation environment
-  final simulator = QueueSimulator();
-
-  // Create and add processes
-  simulator.addProcess(SingletonProcess(time: 5));
-  simulator.addProcess(PeriodicProcess(interval: 10));
-  simulator.addProcess(StochasticProcess(rate: 2));
-
-  // Run the simulation
-  simulator.run();
-
-  // Output performance metrics
-  simulator.printStatistics();
-}
+1. Import the necessary Dart file that includes the queueing system simulator.
+2. Initialize the simulation environment by creating an instance of `QueueSimulator`.
+3. Create and add processes to the simulator, including Singleton, Periodic, and Stochastic processes.
+4. Run the simulation by invoking the `run` method.
+5. Output performance metrics using the `printStatistics` method.
 
 ## Examples
 You can find additional examples in the `examples/` directory. These examples demonstrate how to configure and run different queueing scenarios, allowing you to experiment with different process types and configurations.
@@ -85,12 +63,12 @@ You can find additional examples in the `examples/` directory. These examples de
 Contributions are welcome! If you have suggestions for improvements or new features, please submit an issue or create a pull request.
 
 ### Steps to Contribute
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -m 'Add new feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Open a pull request.
+1. Fork the repository to your GitHub account.
+2. Create a new branch for your feature or bug fix.
+3. Make the necessary changes in your branch.
+4. Commit your changes with a descriptive message.
+5. Push the changes to your GitHub repository.
+6. Open a pull request for review and potential merging.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. For more details, see the LICENSE file included in the repository.
